@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 220 25% 5%;
+    --foreground: 180 10% 90%;
+    --card: 220 25% 8%;
+    --card-foreground: 180 10% 90%;
+    --popover: 220 25% 8%;
+    --popover-foreground: 180 10% 90%;
+    --primary: 174 100% 47%;
+    --primary-foreground: 220 25% 5%;
+    --secondary: 220 20% 12%;
+    --secondary-foreground: 180 10% 85%;
+    --muted: 220 20% 14%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 174 100% 47%;
+    --accent-foreground: 220 25% 5%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 20% 16%;
+    --input: 220 20% 16%;
+    --ring: 174 100% 47%;
+    --chart-1: 174 100% 47%;
+    --chart-2: 200 80% 50%;
+    --chart-3: 220 70% 50%;
+    --chart-4: 160 60% 45%;
+    --chart-5: 190 90% 55%;
+    --radius: 0.75rem;
+    --sidebar-background: 220 25% 5%;
+    --sidebar-foreground: 180 10% 90%;
+    --sidebar-primary: 174 100% 47%;
+    --sidebar-primary-foreground: 220 25% 5%;
+    --sidebar-accent: 220 20% 12%;
+    --sidebar-accent-foreground: 180 10% 90%;
+    --sidebar-border: 220 20% 16%;
+    --sidebar-ring: 174 100% 47%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(220 25% 5%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(174 100% 47% / 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(174 100% 47% / 0.5);
+}
